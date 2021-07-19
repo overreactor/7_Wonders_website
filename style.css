@@ -26,6 +26,7 @@
                                         justify-content: center;
                                         font-weight: 1000;
                                         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                                        font-size: .85rem;
                                     }
                                     
                                     nav ul {
@@ -74,10 +75,25 @@
                                     }
                                     
                                     footer {
-                                        background-color: violet;
-                                        height: 2.5rem;
-                                        width: 100%;
-                                        display: flex;
+                                        height: auto;
                                         justify-content: center;
                                         align-items: center;
+                                        text-align: center;
+                                        padding: 1rem 0;
+                                    }
+                                    
+                                    #video-container {
+                                        position: relative;
+                                        overflow: hidden;
+                                        padding-top: 100%;
+                                    }
+                                    
+                                    #video-iframe {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        border: 0;
+                                        align-self: center;
                                     }
