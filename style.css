@@ -6,8 +6,7 @@
     
     a:hover {
         color: crimson;
-        font-weight: 1000;
-        font-size: 1.25rem;
+        font-weight: 900;
     }
     
     body {
@@ -43,7 +42,7 @@
     nav>ul {
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     
     nav>ul>#item1 {
@@ -51,7 +50,15 @@
     }
     
     nav>ul>#item2 {
-        flex-grow: 4.75;
+        flex-grow: 0.25;
+    }
+    
+    nav>ul>#item3 {
+        flex-grow: 0.25;
+    }
+    
+    nav>ul>#item4 {
+        flex-grow: 4.25;
     }
     
     header {
