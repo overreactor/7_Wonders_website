@@ -9,6 +9,11 @@
         font-weight: 900;
     }
     
+    .chapter-button:hover {
+        transform: translate(-10px, 0px);
+        transition: 0.25s;
+    }
+    
     body {
         text-decoration: none;
         font-size: 1rem;
@@ -23,9 +28,25 @@
         color: darkslategray;
     }
     
-    .centerImage {
-        width: 50%;
-        align-content: center;
+    h5 {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    
+    .center-image img {
+        width: 40%;
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    
+    .center-image #hero {
+        width: 70%;
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    
+    .center-image h5 {
+        text-align: center;
     }
     
     nav {
@@ -35,29 +56,28 @@
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: .85rem;
+        font-size: 0.75rem;
     }
     
-    nav>ul {
+    nav ul {
         width: 100%;
         display: flex;
         align-items: flex-start;
     }
     
-    nav>ul>#item1 {
+    nav ul #item1 {
         flex-grow: 0.25;
     }
     
-    nav>ul>#item2 {
+    nav ul #item2 {
         flex-grow: 0.25;
     }
     
-    nav>ul>#item3 {
+    nav ul #item3 {
         flex-grow: 0.25;
     }
     
-    nav>ul>#item4 {
+    nav ul #item4 {
         flex-grow: 4.25;
     }
     
@@ -70,8 +90,7 @@
     main {
         display: flex;
         flex-grow: 1;
-        flex-direction: row;
-        margin: auto;
+        flex-direction: column;
         flex-flow: row;
     }
     
@@ -82,7 +101,6 @@
     }
     
     aside {
-        /* background-color: teal; */
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 35%;
@@ -100,19 +118,18 @@
         align-items: stretch;
         text-align: center;
         padding: 1rem 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 600;
     }
     
     #video-container {
         position: relative;
         overflow: hidden;
-        padding-top: 100%;
+        padding-top: 40%;
     }
     
     #video-iframe {
         position: absolute;
-        top: 0;
+        top: 10%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -158,11 +175,11 @@ background-color: hotpink;
 } */
         h1 {
             font-size: 1.25rem;
-            font-weight: 1000;
+            font-weight: 900;
         }
         h2 {
             font-size: 1rem;
-            font-weight: 1000;
+            font-weight: 900;
         }
         p {
             font-size: 0.75rem;
@@ -174,5 +191,8 @@ background-color: hotpink;
         }
         h3 {
             font-size: 1rem
+        }
+        h5 {
+            font-size: .65rem
         }
     }
