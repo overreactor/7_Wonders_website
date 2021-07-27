@@ -123,8 +123,8 @@
     
     #video-container {
         position: relative;
-        overflow: hidden;
-        padding-top: 40%;
+        padding-bottom: 33%;
+        margin-bottom: 40px
     }
     
     #video-iframe {
