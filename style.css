@@ -2,6 +2,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
 }
 
 a:hover {
@@ -55,8 +56,8 @@ nav {
     align-items: center;
     display: flex;
     justify-content: center;
-    font-weight: 600;
-    font-size: 0.75rem;
+    font-weight: 300;
+    font-size: 0.65rem;
 }
 
 nav ul {
@@ -75,7 +76,7 @@ nav ul #item2 {
 }
 
 nav ul #item3 {
-    flex-grow: 4.5;
+    flex-grow: 6.5;
 }
 
 #page-title {
