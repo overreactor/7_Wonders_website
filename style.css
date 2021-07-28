@@ -1,198 +1,278 @@
-    * {
-        text-decoration: none;
-        list-style-type: none;
-        font-family: Georgia, Times, 'Times New Roman', serif;
-    }
-    
-    a:hover {
-        color: crimson;
-        font-weight: 900;
-    }
-    
-    .chapter-button:hover {
-        transform: translate(-10px, 0px);
-        transition: 0.25s;
-    }
-    
-    body {
-        text-decoration: none;
-        font-size: 1rem;
-        background-color: wheat;
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
-    
+* {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+a:hover {
+    color: crimson;
+    font-weight: 900;
+}
+
+.chapter-button:hover {
+    transform: translate(-20px);
+    transition: 0.35s;
+}
+
+body {
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.75rem;
+    color: darkslategray;
+}
+
+h5 {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.center-image img {
+    width: 40%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.center-image #hero {
+    width: 70%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.center-image h5 {
+    text-align: center;
+}
+
+nav {
+    background-color: lightgrey;
+    height: 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-right: 2.5rem;
+}
+
+nav ul #item1 {
+    flex-grow: 0.25;
+}
+
+nav ul #item2 {
+    flex-grow: 0.25;
+}
+
+nav ul #item3 {
+    flex-grow: 4.5;
+}
+
+#page-title {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-flow: row;
+}
+
+article {
+    flex-grow: 1;
+    height: auto;
+    padding: 0 1rem
+}
+
+aside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 35%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    height: auto;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+#video-container {
+    position: relative;
+    padding-bottom: 33%;
+    margin-bottom: 40px;
+    margin-top: 65px;
+}
+
+#video-iframe {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    align-self: center;
+}
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.nav-link:hover {
+    color: #f72f2f;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 992px) {
+    /* body {
+background-color: brown;
+} */
     h1 {
-        font-size: 2.75rem;
-        color: darkslategray;
+        font-size: 2.1rem;
     }
-    
-    h5 {
-        font-size: 0.7rem;
-        margin: 0;
+    h3 {
+        font-size: .8rem
     }
-    
-    .center-image img {
-        width: 40%;
-        display: block;
-        margin: 0 auto 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* body {
+background-color: blue;
+} */
+    h1 {
+        font-size: 1.5rem;
     }
-    
-    .center-image #hero {
-        width: 70%;
-        display: block;
-        margin: 0 auto 0 auto;
+    p {
+        font-size: 0.85rem;
     }
-    
-    .center-image h5 {
-        text-align: center;
-    }
-    
-    nav {
-        background-color: lightgrey;
-        height: 2.5rem;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 0.75rem;
-    }
-    
-    nav ul {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    nav ul #item1 {
-        flex-grow: 0.25;
-    }
-    
-    nav ul #item2 {
-        flex-grow: 0.25;
-    }
-    
-    nav ul #item3 {
-        flex-grow: 0.25;
-    }
-    
-    nav ul #item4 {
-        flex-grow: 4.25;
-    }
-    
-    header {
-        height: auto;
-        width: 100%;
-        text-align: center;
-    }
-    
     main {
         display: flex;
         flex-grow: 1;
         flex-direction: column;
-        flex-flow: row;
     }
-    
-    article {
-        flex-grow: 1;
-        height: auto;
-        padding: 0 1rem
+    h3 {
+        font-size: 1rem
     }
-    
-    aside {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 35%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-    }
-    
-    footer {
-        height: auto;
-        justify-content: center;
-        align-items: stretch;
-        text-align: center;
-        padding: 1rem 0;
-        font-weight: 600;
-    }
-    
-    #video-container {
-        position: relative;
-        padding-bottom: 33%;
-        margin-bottom: 40px
-    }
-    
-    #video-iframe {
-        position: absolute;
-        top: 10%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-        align-self: center;
-    }
-    
-    @media only screen and (max-width: 992px) {
-        /* body {
-background-color: brown;
-} */
-        h1 {
-            font-size: 2.1rem;
-        }
-        h3 {
-            font-size: .8rem
-        }
-    }
-    
-    @media only screen and (max-width: 768px) {
-        /* body {
-background-color: blue;
-} */
-        h1 {
-            font-size: 1.5rem;
-        }
-        p {
-            font-size: 0.85rem;
-        }
-        main {
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
-        }
-        h3 {
-            font-size: 1rem
-        }
-    }
-    
-    @media only screen and (max-width: 600px) {
-        /* body {
+}
+
+@media only screen and (max-width: 600px) {
+    /* body {
 background-color: hotpink;
 } */
-        h1 {
-            font-size: 1.25rem;
-            font-weight: 900;
-        }
-        h2 {
-            font-size: 1rem;
-            font-weight: 900;
-        }
-        p {
-            font-size: 0.75rem;
-        }
-        main {
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
-        }
-        h3 {
-            font-size: 1rem
-        }
-        h5 {
-            font-size: .65rem
-        }
+    h1 {
+        font-size: 1.25rem;
+        font-weight: 900;
     }
+    h2 {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    p {
+        font-size: 0.75rem;
+    }
+    main {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 1rem
+    }
+    h5 {
+        font-size: .65rem
+    }
+    .nav-menu {
+        position: relative;
+        left: -110%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 25%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 0.5rem;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
